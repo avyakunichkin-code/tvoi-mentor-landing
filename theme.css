@@ -1,0 +1,136 @@
+/* Твой Ментор — дизайн-система «От пунктира к сплошной» (ADR 0012).
+   Значения совпадают с docs/design/DESIGN-PRINCIPLES.md и прототипом docs/design/prototype/styles.css.
+   Подключение в приложении — после Tailwind:
+     @import 'tailwindcss';
+     @import '@tvoi-mentor/ui/theme.css'; */
+
+
+
+/* ---------- Шрифты: self-hosted, поднабор кириллица + латиница (ADR 0012) ---------- */
+@font-face {
+  font-family: "Unbounded";
+  src: url("./fonts/unbounded-var.woff2") format("woff2");
+  font-weight: 200 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("./fonts/onest-var.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("./fonts/jetbrains-mono-var.woff2") format("woff2");
+  font-weight: 100 800;
+  font-display: swap;
+}
+
+/* ---------- Токены ---------- */
+:root {
+  color-scheme: light;
+  --bg: #f2f3ee;
+  --surface: #ffffff;
+  --surface-2: #edeee8;
+  --border: #d5d8ce;
+  --border-strong: #8d909a;
+  --text: #14151c;
+  --text-2: #5a5d68;
+  --primary: #14151c;
+  --primary-hover: #2e3039;
+  --on-primary: #ffffff;
+  --primary-step: #2c46d8;
+  --accent: #2c46d8;
+  --accent-hover: #1b2fa6;
+  --accent-soft: #e6eaff;
+  --on-accent: #ffffff;
+  --spark: #c6f24e;
+  --on-spark: #14151c;
+  --spark-text: #4a6300;
+  --streak: #ff6a3d;
+  --on-streak: #14151c;
+  --ok: #157a4a;
+  --ok-soft: #dff3e8;
+  --warn: #a33a12;
+  --warn-soft: #ffe7dc;
+  --danger: #b3261e;
+  --danger-soft: #fbe6e4;
+  --focus: #2c46d8;
+  --viz-estimate: #2c46d8;
+  --viz-confirmed: #14151c;
+  --viz-confirmed-fill: #c6f24e;
+  --viz-target: #5a5d68;
+  --viz-grid: #e2e4dc;
+  --shadow: 0 1px 0 #d5d8ce, 0 12px 32px -12px rgb(20 21 28 / 0.18);
+  --shadow-step: 0 3px 0 var(--primary-step);
+  --tap: 44px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0e0f14;
+    --surface: #181a22;
+    --surface-2: #22252f;
+    --border: #2f333f;
+    --border-strong: #6b6f7b;
+    --text: #eef0ea;
+    --text-2: #a3a7b5;
+    --primary: #eef0ea;
+    --primary-hover: #ffffff;
+    --on-primary: #0e0f14;
+    --primary-step: #8ea2ff;
+    --accent: #8ea2ff;
+    --accent-hover: #b3c0ff;
+    --accent-soft: #232b4f;
+    --on-accent: #0e0f14;
+    --spark-text: #c6f24e;
+    --ok: #5cc593;
+    --ok-soft: #15301f;
+    --warn: #ff9a7a;
+    --warn-soft: #3a2118;
+    --danger: #ff8a80;
+    --danger-soft: #3a1b19;
+    --focus: #8ea2ff;
+    --viz-estimate: #8ea2ff;
+    --viz-confirmed: #eef0ea;
+    --viz-target: #a3a7b5;
+    --viz-grid: #2f333f;
+    --shadow: none;
+    --shadow-step: none;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0e0f14;
+  --surface: #181a22;
+  --surface-2: #22252f;
+  --border: #2f333f;
+  --border-strong: #6b6f7b;
+  --text: #eef0ea;
+  --text-2: #a3a7b5;
+  --primary: #eef0ea;
+  --primary-hover: #ffffff;
+  --on-primary: #0e0f14;
+  --primary-step: #8ea2ff;
+  --accent: #8ea2ff;
+  --accent-hover: #b3c0ff;
+  --accent-soft: #232b4f;
+  --on-accent: #0e0f14;
+  --spark-text: #c6f24e;
+  --ok: #5cc593;
+  --ok-soft: #15301f;
+  --warn: #ff9a7a;
+  --warn-soft: #3a2118;
+  --danger: #ff8a80;
+  --danger-soft: #3a1b19;
+  --focus: #8ea2ff;
+  --viz-estimate: #8ea2ff;
+  --viz-confirmed: #eef0ea;
+  --viz-target: #a3a7b5;
+  --viz-grid: #2f333f;
+  --shadow: none;
+  --shadow-step: none;
+}
+
