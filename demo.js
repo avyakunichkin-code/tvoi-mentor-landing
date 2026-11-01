@@ -4,6 +4,11 @@ const views = {
   target: { level: "4", text: "Целевой уровень в примере. Это ориентир развития, а не уже достигнутый результат." },
 };
 
+const controls = document.querySelector('.tabs');
+const hint = document.getElementById('demo-hint');
+if (controls) controls.hidden = false;
+if (hint) hint.hidden = false;
+
 for (const button of document.querySelectorAll("[data-view]")) {
   button.addEventListener("click", () => {
     const view = views[button.dataset.view];
