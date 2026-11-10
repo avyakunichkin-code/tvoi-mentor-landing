@@ -1,0 +1,11 @@
+.cookie-consent{position:fixed;inset:auto 16px 16px 16px;z-index:90;max-width:704px;max-height:calc(100dvh - 32px);overflow-y:auto;margin-inline:auto;padding:20px;border:1px solid var(--border-strong);border-radius:22px;background:var(--surface);color:var(--text);box-shadow:var(--shadow);font-size:14px}
+.cookie-consent h2{font:650 16px/1.4 Onest,sans-serif;letter-spacing:0;margin:0 0 8px}
+.cookie-consent p{margin:0 0 12px;color:var(--text-2);line-height:1.6}
+.cookie-consent a{color:var(--accent)}
+.cookie-consent__options{display:grid;gap:8px;margin:0 0 12px;padding:0;border:0}
+.cookie-consent__actions{display:flex;flex-wrap:wrap;gap:8px}
+.cookie-consent button,.cookie-settings{min-height:44px;padding:8px 16px;border:1px solid var(--border-strong);border-radius:14px;background:var(--surface);color:var(--text);font:inherit;cursor:pointer}
+.cookie-consent button.cookie-primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent,#fff)}
+.cookie-settings{padding:0;border:0;background:none;text-decoration:underline;font-size:12px;color:var(--text-2)}
+.cookie-consent :focus-visible,.cookie-settings:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.legal-table-wrap{max-width:100%;overflow-x:auto}.legal-table{width:100%;min-width:480px;border-collapse:collapse;font-size:14px}.legal-table th,.legal-table td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--border)}

@@ -1,0 +1,120 @@
+{
+  "designSystemVersion": "2.0",
+  "prepared": "2026-11-10",
+  "source": "tvoi-mentor-channel/docs/design/brand-system",
+  "purpose": "Approved public web brand assets",
+  "files": [
+    {
+      "path": "logos/wordmark.svg",
+      "bytes": 1750,
+      "sha256": "e8c24ad77a76a11bc06881f703acaa59c177886ae8c2b273a6c4c39280465e6a"
+    },
+    {
+      "path": "logos/wordmark-mono.svg",
+      "bytes": 1652,
+      "sha256": "f6652fc6d530336c880419dcf0209e4b177f01f95e56c5f264546db8846c7370"
+    },
+    {
+      "path": "logos/wordmark-inverse.svg",
+      "bytes": 1652,
+      "sha256": "2ad713f00a14948eed00d9090ef6aa85046fbba54022f2777ab2394000db2dce"
+    },
+    {
+      "path": "logos/tm.svg",
+      "bytes": 349,
+      "sha256": "8ef7e44061477571591f15b56442cbfdf72ea02f713adcd6c2c71f58009980b5"
+    },
+    {
+      "path": "logos/tm-mono.svg",
+      "bytes": 245,
+      "sha256": "ff04b3dea982753e51ff956aec5b9bd5d20233bdf3d24a9dbcb3d7c1b38af506"
+    },
+    {
+      "path": "logos/tm-inverse.svg",
+      "bytes": 245,
+      "sha256": "fda6ce0a523a6f72e30791f22a314b2c2b721b946a2ee489c073e6d98a0697e8"
+    },
+    {
+      "path": "mascot/explain-waist.png",
+      "bytes": 941642,
+      "sha256": "9ba982816a23577f07a1035402f631d92547073145cd42fbda4e87f373f7f848",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true
+    },
+    {
+      "path": "mascot/welcome-full.png",
+      "bytes": 1248579,
+      "sha256": "cbef96a7c08f15e9d1d654b18e458ecc5c2c279014146a38fcfa58d986906dfe",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true
+    },
+    {
+      "path": "mascot/explain-full.png",
+      "bytes": 1315431,
+      "sha256": "5221d68903472c78edae843edc8e249eac528ae0a0ad670610ce13b93b79b6a8",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true
+    },
+    {
+      "path": "mascot/think-full.png",
+      "bytes": 1189055,
+      "sha256": "b8e5d87bf3c16d0baffa40af8c2ba1a0922d9d79d7c6f9e3dd7c2e1b96448a34",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true
+    },
+    {
+      "path": "fonts/onest-var.woff2",
+      "bytes": 48188,
+      "sha256": "a9a543a0727a6389dbcbf2cb7eaa9f91188eecde35c74cb207c5c00a0c2214d1"
+    },
+    {
+      "path": "fonts/jetbrains-mono-var.woff2",
+      "bytes": 53944,
+      "sha256": "f4832468ae50b9bec898ce7459f8dad6e90bda412a03f1538d7d45af1df31c9e"
+    },
+    {
+      "path": "fonts/licenses/OFL-Onest.txt",
+      "bytes": 4384,
+      "sha256": "071195d8806e226faeee60259c28ca67b458227af5195a73f5cfcab06e3003bc"
+    },
+    {
+      "path": "fonts/licenses/OFL-JetBrainsMono.txt",
+      "bytes": 4399,
+      "sha256": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697"
+    },
+    {
+      "path": "elements/verification-line.svg",
+      "bytes": 469,
+      "sha256": "f4eee248c0fc3727cad5f925c4d76825c0e36ce3b781e2e41eac3a2f78281648"
+    },
+    {
+      "path": "elements/lilac-wave.svg",
+      "bytes": 215,
+      "sha256": "a2b9f1ced609377659d25e41505e71a1c8e5ea8bbef81162f95e2f1522bca416"
+    },
+    {
+      "path": "elements/attention-rays.svg",
+      "bytes": 258,
+      "sha256": "78c73e1301ff2b22903a04c57771fefa8f493cd7f315da6dae1c579fbbb79e19"
+    },
+    {
+      "path": "tokens.json",
+      "bytes": 1129,
+      "sha256": "e3122577dc9f5cf814bce0c371bab8ceefbb904f42baf74fe6541aa12f75b8d8"
+    },
+    {
+      "path": "tokens.css",
+      "bytes": 265,
+      "sha256": "494730099c3fb00d10cc49cfce1945e38f5cacefcb7e9753d8c03b859b9426f7"
+    },
+    {
+      "path": "web-fonts.css",
+      "bytes": 296,
+      "sha256": "348a3a724da4407da79e04337e6eb5a7d01206decf5177da3f0542359ef0e50d"
+    }
+  ]
+}

@@ -3,18 +3,29 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Твой Ментор — персональный путь развития QA: карта навыков, осмысленный план и подтверждение знаний практикой. Продукт в разработке.">
-  <title>Твой Ментор — от «кажется, умею» к «могу показать»</title>
+  <title>ТВОЙ МЕНТОР — твоя цель, твой путь, следующий шаг</title>
   <link rel="canonical" href="https://avyakunichkin-code.github.io/tvoi-mentor-landing/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Твой Ментор">
+  <meta property="og:title" content="Твой Ментор — от «кажется, умею» к «могу показать»">
+  <meta property="og:description" content="Персональный путь развития QA: карта навыков, осмысленный план и подтверждение знаний практикой. Продукт в разработке.">
+  <meta property="og:url" content="https://avyakunichkin-code.github.io/tvoi-mentor-landing/">
+  <meta property="og:image" content="https://avyakunichkin-code.github.io/tvoi-mentor-landing/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Твой Ментор. Кажется, умею. Могу показать.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/onest-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/unbounded-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="roadmap.css">
-  <script src="site.js"></script><script src="demo.js" defer></script>
-</head>
+  <link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="roadmap.css"><link rel="stylesheet" href="consent.css">
+  <script src="site.js"></script><script src="consent.js" defer></script><script src="demo.js" defer></script>
+<link rel="stylesheet" href="brand-home.css"><script src="brand-motion.js" defer></script></head>
 <body class="public-home">
 <a class="skip" href="#main">К содержимому</a>
 <aside class="site-sidebar" aria-label="Навигация сайта">
-<a class="site-brand" href="index.html" aria-label="Твой Ментор — главная"><span aria-hidden="true">↗</span><span>твой<br> ментор</span></a>
+<a class="site-brand" href="index.html" aria-label="Твой Ментор — главная"><img data-brand-logo src="brand/logos/wordmark.svg" data-light-src="brand/logos/wordmark.svg" data-dark-src="brand/logos/wordmark-inverse.svg" alt="ТВОЙ МЕНТОР" width="180" height="25"></a>
 <p class="site-caption">Твой следующий шаг</p>
 <nav class="site-nav" aria-label="Основная навигация">
 <a href="index.html" aria-current="page"><span aria-hidden="true">↗</span>Главная</a>
@@ -22,37 +33,36 @@
 <a href="index.html#demo"><span aria-hidden="true">◎</span>Пример карты</a>
 <a href="knowledge/"><span aria-hidden="true">▤</span>База знаний</a>
 <a href="index.html#roadmap"><span aria-hidden="true">→</span>Развитие проекта</a>
+<a href="design-system/"><span aria-hidden="true">◈</span>Дизайн-система</a>
 </nav>
 <div class="site-sidebar-foot"><span class="site-seam" aria-hidden="true"></span><p>От пунктира<br>к сплошной.</p><small>Развитие QA-навыков</small></div></aside>
 <div class="site-workspace"><header class="site-topbar"><span>Персональный маршрут для QA</span><button type="button" data-theme-toggle hidden>Тема</button><span class="site-status">В разработке</span></header>
-<main id="main" class="wrap public-main">
-  <section class="public-hero" aria-labelledby="home-title">
-    <p class="eyebrow">От предположения к подтверждённому навыку</p>
-    <h1 id="home-title">Кажется, умею.<br><span>Могу показать.</span></h1>
-    <p class="public-intro">Пойми, где ты сейчас. Выбери цель. Развивай QA-навыки по плану, в котором у каждого шага есть причина.</p>
-    <div class="public-actions"><a class="button" href="knowledge/">Выбрать первый материал <span aria-hidden="true">↗</span></a><a href="#demo">Посмотреть пример карты →</a></div>
-    <p class="public-caption">База знаний открыта без регистрации. Персональный маршрут готовится к пилоту.</p>
-  </section>
-  <section class="public-next" aria-labelledby="next-title">
-    <div class="public-section-head"><h2 id="next-title">Разобраться и попробовать</h2><span class="public-tag">Пример учебного шага</span></div>
-    <article class="public-next-card"><span class="public-next-icon" aria-hidden="true">↗</span><div><p class="eyebrow">Тест-дизайн на понятном примере</p><h3>Граничные значения</h3><p>Как выбрать пределы и соседние значения, записать ожидания и проверить себя.</p></div><a href="knowledge/boundary-values/">Открыть материал ↗</a></article>
-  </section>
-  <section id="approach" class="public-approach" aria-labelledby="approach-title">
-    <h2 id="approach-title" class="public-section-title">От точки старта к результату</h2>
-    <ol class="public-route"><li><span aria-hidden="true">01</span><h3>Увидеть точку старта</h3><p>Оценка помогает найти пробелы. Её точность показывается отдельно.</p></li><li><span aria-hidden="true">02</span><h3>Развить навык</h3><p>Объяснения, примеры и практика — в маршруте к выбранной цели.</p></li><li><span aria-hidden="true">03</span><h3>Подтвердить результат</h3><p>Вопросами или практикой по правилам уровня. Самооценки недостаточно.</p></li></ol>
-  </section>
-  <section id="demo" class="public-demo" aria-labelledby="demo-title">
+<main id="main" class="wrap public-main approved-home" tabindex="-1">
+<section class="hero" data-concept="route"><div class="hero-copy"><p class="eyebrow">Персональное развитие для QA</p><h1>Твоя цель.<br>Твой путь.<br><em>Следующий шаг.</em></h1><p class="lead">ТВОЙ МЕНТОР помогает оценить QA-навыки, найти пробелы и построить план развития с уроками и практикой.</p><div class="actions"><a class="button primary" href="knowledge/">Выбрать первый материал <span>↗</span></a><a class="text-link" href="#route-plan">Посмотреть маршрут →</a></div><p class="availability">База знаний уже открыта.<br>Персональный маршрут готовится к пилоту.</p></div><div class="hero-art route-art"><div class="art-halo"></div><svg class="route-svg" viewBox="0 0 660 520" role="img" aria-label="Извилистая лента связывает текущую точку, практику и цель"><defs><linearGradient id="ribbon" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#ded7f5"/><stop offset=".55" stop-color="#a39be9"/><stop offset="1" stop-color="#2c46d8"/></linearGradient><filter id="ribbon-shadow"><feDropShadow dx="0" dy="22" stdDeviation="14" flood-color="#14151c" flood-opacity=".15"/></filter></defs><ellipse cx="357" cy="438" rx="245" ry="31" fill="#14151c" opacity=".05"/><path d="M75 416 C250 446 120 295 294 302 S554 369 502 220 S445 100 594 95" fill="none" stroke="url(#ribbon)" stroke-width="66" filter="url(#ribbon-shadow)"/><path class="draw-path" d="M75 407 C250 437 120 286 294 293 S554 360 502 211 S445 91 594 86" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="3" stroke-dasharray="7 10"/><g fill="#f9f6ef" stroke="#2c46d8" stroke-width="4"><circle cx="88" cy="410" r="14"/><circle cx="294" cy="293" r="14"/><circle cx="500" cy="212" r="14"/></g><path d="M584 86l13-13 13 13-13 13z" fill="#c6f24e" stroke="#14151c" stroke-width="2"/><g fill="#14151c" font-size="14" font-weight="650"><text x="43" y="466">Ты здесь</text><text x="263" y="252">Практика</text><text x="529" y="173">Твоя цель</text></g></svg><div class="floating-note note-top"><span class="tiny-dot"></span> Не всё сразу. По твоему плану.</div><div class="next-card"><span class="small-label">Пример следующего шага</span><strong>Граничные значения <b>↗</b></strong><span>Разобраться → попробовать</span></div><div class="art-caption">Метафора маршрута, не результат оценки</div></div></section>
+
+
+<section class="hero-bottom"><span>Оценка навыков</span><span class="divider-arrow">→</span><span>Персональный план</span><span class="divider-arrow">→</span><span>Уроки и практика</span><a href="#approach" aria-label="Перейти к разделу Как это работает">↓</a></section><div class="retained-sections"><section class="public-audience" aria-labelledby="audience-title">
+    <div class="public-section-head"><h2 id="audience-title">Для кого мы это делаем</h2></div>
+    <div class="public-audience-grid"><article class="public-audience-card"><p class="eyebrow">Главный фокус</p><h3>Из ручного тестирования в автоматизацию</h3><p>Ты Junior или Middle Manual QA и хочешь понять, каких навыков не хватает для перехода.</p></article><article class="public-audience-card"><p class="eyebrow">Рост в ручном QA</p><h3>От Junior к Middle</h3><p>Хочешь вырасти в грейде или подготовиться к собеседованию.</p></article></div>
+    <p class="public-audience-note">Начинаешь с нуля? Персональный маршрут пока рассчитан не на старт в профессии. Базу знаний можно читать без ограничений.</p>
+  </section><section class="public-next" aria-labelledby="next-title">
+    <div class="public-section-head"><h2 id="next-title">Разобраться и попробовать</h2><span class="public-tag">Черновики на человеческом ревью</span></div>
+    <div class="kb-preview"><section class="kb-preview-group"><h3>Тест-дизайн одного поля</h3><ol><li><a href="knowledge/reading-field-requirements/">Как читать требования к одному полю</a></li><li><a href="knowledge/equivalence-partitioning/">Классы эквивалентности одного поля</a></li><li><a href="knowledge/boundary-values/">Границы одного числового поля</a></li><li><a href="knowledge/writing-test-cases/">Как записать проверку по шаблону тест-кейса</a></li></ol></section><section class="kb-preview-group"><h3>Описание дефектов</h3><ol><li><a href="knowledge/reproducible-bug-reports/">Как написать воспроизводимый баг-репорт</a></li><li><a href="knowledge/severity-and-priority/">Серьёзность и приоритет дефекта</a></li></ol></section><section class="kb-preview-group"><h3>Организация проверок</h3><ol><li><a href="knowledge/confirmation-and-regression/">Повторная проверка исправления и регрессия</a></li><li><a href="knowledge/writing-checklists/">Как составить чек-лист по шаблону</a></li></ol></section></div>
+  </section></div>
+<section class="section how-section" id="approach"><div class="section-heading"><p class="eyebrow">Как это работает</p><h2>Меньше «что учить?».<br>Больше «вот мой шаг».</h2><p>План связывает твою цель с конкретными навыками. Ты понимаешь, зачем нужен каждый материал и как проверить результат.</p></div><div class="three-grid"><article class="feature-card reveal"><span class="number">01</span><div class="mini-estimate">○ ┄┄┄┄</div><h3>Понять, где ты сейчас</h3><p>Оценка показывает отправную точку. Самооценка и подтверждённый уровень отображаются отдельно.</p></article><article class="feature-card reveal"><span class="number">02</span><div class="mini-route">↗ <span></span> ↗</div><h3>Выбрать направление</h3><p>Персональный план связывает пробелы в навыках с уроками и практикой под твою цель.</p></article><article class="feature-card reveal"><span class="number">03</span><div class="mini-confirm">■ ━━━━</div><h3>Проверить на практике</h3><p>Прочитать — начало. Проверка по критериям помогает увидеть, что получается, а что стоит повторить.</p></article></div></section>
+<section class="section map-section" id="route-plan"><div class="map-intro"><p class="eyebrow">Маршрут в деталях</p><h2>За каждым шагом<br>есть причина.</h2><p>Пример показывает устройство плана. Это демонстрационные данные, не результат твоей оценки.</p><div class="mentor-inline"><img src="brand/mascot/explain-waist.png" alt="" width="180" height="180" loading="lazy"><blockquote>Не нужно учить всё подряд.<br>Начни с того, что пригодится<br>в следующей задаче.</blockquote></div></div><div class="journey-demo reveal"><div class="demo-header"><span class="badge">Условный пример</span><span>Тест-дизайн</span></div><div class="journey-row done"><span class="journey-node">✓</span><div><small>Шаг завершён</small><h3>Классы эквивалентности</h3><p>Разобраться, как разделять входные данные.</p></div></div><div class="journey-row active"><span class="journey-node">↗</span><div><small>Следующий шаг</small><h3>Граничные значения</h3><p>Научиться выбирать проверки около границ.</p><div class="why"><b>Почему сейчас</b><br>Эта техника продолжает работу с классами эквивалентности.</div></div></div><div class="journey-row"><span class="journey-node">○</span><div><small>Дальше</small><h3>Практика на примере</h3><p>Применить технику и сверить решение с критериями.</p></div></div><p class="demo-disclaimer">Завершённый шаг ≠ подтверждённый уровень навыка.</p></div></section>
+<section class="section start-section" id="start"><div><p class="eyebrow">Можно начать сейчас</p><h2>Один материал.<br><em>Первый понятный шаг.</em></h2><p>Открой базу знаний без регистрации. Познакомься с подходом на примерах и самопроверке.</p></div><a class="material-card" href="knowledge/"><span class="material-icon">↗</span><span><small>Открытая база знаний</small><strong>Разобраться и попробовать</strong><span>Выбрать тему и перейти к материалам</span></span><b>↗</b></a></section>
+<section class="section faq-section"><p class="eyebrow">Перед первым шагом</p><h2>Осталось разобраться?</h2><details><summary>Что такое ТВОЙ МЕНТОР?</summary><p>Сервис оценки QA-навыков и персонального развития: оценка, план, уроки и практика. База знаний доступна сейчас, персональный маршрут готовится к пилоту.</p></details><details><summary>Чтение материала подтверждает навык?</summary><p>Нет. Прочитанный материал и выполненный учебный шаг сами по себе не подтверждают уровень. Нужны соответствующие свидетельства проверки по правилам продукта.</p></details><details><summary>Это только для перехода в автоматизацию?</summary><p>Подход помогает развивать QA-навыки под выбранную цель. Переход в автоматизацию — один из сценариев; базовые техники тестирования тоже входят в развитие.</p></details></section>
+<div class="retained-sections"><section id="demo" class="public-demo" aria-labelledby="demo-title">
     <div class="public-section-head"><h2 id="demo-title">Один навык. Три разных сигнала.</h2><span class="public-tag">Пример, не твои результаты</span></div>
     <div class="public-demo-grid"><div class="demo-card"><div class="card-top"><p class="eyebrow">Карта навыков</p><span class="sample-badge">Пример</span></div><h3>Тестирование API</h3>
       <div class="tabs" hidden role="group" aria-label="Выбрать представление" aria-describedby="demo-hint"><button type="button" data-view="estimate" aria-pressed="true">○ Оценка</button><button type="button" data-view="confirmed" aria-pressed="false">■ Подтверждено</button><button type="button" data-view="target" aria-pressed="false">· Цель</button></div>
       <p id="demo-hint" class="demo-hint" hidden>Выбери слой карты: оценку, подтверждение или цель.</p>
-      <div class="level-display" aria-live="polite" aria-atomic="true"><div class="level"><strong id="level">3</strong><span>из 4</span></div><p id="explanation">Предварительная оценка. Её ещё нужно подтвердить практикой.</p></div><div id="level-bars" class="level-bars estimate" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-      <p class="public-card-note">Самооценка не повышает подтверждённый уровень. В план и прогресс идёт только подтверждённое.</p><noscript><p>В примере: оценка 3, подтверждено 2, цель 4.</p></noscript>
-    </div><article class="public-library"><span aria-hidden="true">▤</span><p class="eyebrow">База знаний для QA</p><h3>Понятно.<br>На примерах.<br>По делу.</h3><p>Требования, тест-дизайн, описание дефектов и организация проверок. Объяснения, разборы и самопроверка.</p><a href="knowledge/">Все материалы ↗</a><p class="public-card-note">Материалы пока на человеческом ревью. Статус указан в каждой статье.</p></article></div>
-  </section>
-  <section class="public-manifesto" aria-labelledby="principle-title"><p class="eyebrow">Прогресс, у которого есть основания</p><h2 id="principle-title">Пунктир становится<br><span>сплошной.</span></h2><p>Уровни 1–2 подтверждаются вопросами. Для уровней 3–4 нужна практика и подготовленное задание. Прочитанный урок и подтверждённый навык показываются отдельно.</p><div class="public-progress-line" aria-hidden="true"><span></span><b>↗</b></div></section>
-  <section class="public-faq" aria-labelledby="faq-title"><div><p class="eyebrow">Понятные правила</p><h2 id="faq-title">Пара вопросов.<br>По делу.</h2></div><div class="public-faq-items"><details><summary>Это курс или персональный план?</summary><p>Твой Ментор связывает оценку QA-навыков, цель и персональный маршрут. Собственные уроки и практика — части этого пути. Полный продукт пока в разработке.</p></details><details><summary>Что можно попробовать уже сейчас?</summary><p>Пример карты и открытую базу знаний: объяснения, примеры и самопроверку. Материалы обозначены как AI-черновики на человеческом ревью.</p><a href="knowledge/">Открыть базу знаний ↗</a></details><details><summary>Прочитанная статья повышает уровень?</summary><p>Нет. Чтение и самопроверка помогают разобраться, но не подтверждают уровень. Уровни 1–2 подтверждаются вопросами, а 3–4 требуют подготовленной практики и проверки по критериям.</p></details></div></section>
-  <section id="roadmap" class="public-roadmap roadmap-journey" aria-labelledby="roadmap-title">
+      <div class="level-display" aria-live="polite" aria-atomic="true"><div class="level"><strong id="level">3</strong><span>из 4</span></div><p id="explanation">Предварительная оценка. Её ещё нужно подтвердить практикой.</p></div>
+      <ul class="signal-rows" aria-label="Пример по шкале из 4 уровней"><li class="is-active" data-signal="estimate"><span>○ Оценка</span><div class="level-bars estimate" aria-hidden="true"><i></i><i></i><i></i><i></i></div><strong>3</strong></li><li data-signal="confirmed"><span>■ Подтверждено</span><div class="level-bars confirmed" aria-hidden="true"><i></i><i></i><i></i><i></i></div><strong>2</strong></li><li data-signal="target"><span>· Цель</span><div class="level-bars target" aria-hidden="true"><i></i><i></i><i></i><i></i></div><strong>4</strong></li></ul>
+      <p class="public-card-note">Самооценка не повышает подтверждённый уровень. В план и прогресс идёт только подтверждённое.</p>
+    </div><article class="public-library"><span aria-hidden="true">▤</span><p class="eyebrow">База знаний для QA</p><h3>Понятно.<br> На примерах.<br> По делу.</h3><p>Требования, тест-дизайн, описание дефектов и организация проверок. Объяснения, разборы и самопроверка.</p><a href="knowledge/">Все материалы ↗</a><p class="public-card-note">Материалы пока на человеческом ревью. Статус указан в каждой статье.</p></article></div>
+  </section><section id="roadmap" class="public-roadmap roadmap-journey" aria-labelledby="roadmap-title">
     <div class="journey-heading"><div><p class="eyebrow">Развитие проекта</p><h2 id="roadmap-title">Большой путь.<br><span>Конкретные шаги.</span></h2></div><p>Мы строим продукт так же, как предлагаем учиться: от понятной основы — к результату, который можно проверить.</p></div>
     <div class="journey-map"><div class="journey-axis" aria-hidden="true"><span>От идеи</span><span>К твоему результату ↗</span></div>
     <ol aria-label="Маршрут развития проекта">
@@ -62,7 +72,6 @@
       <li class="journey-stage journey-future"><span class="journey-number" aria-hidden="true">04</span><div class="journey-node" aria-hidden="true">↗</div><span class="journey-status">Следующий горизонт</span><h3>Расти<br> командой</h3><p>После индивидуального продукта — развитие команд. Состав возможностей ещё определяем.</p><span class="journey-detail">Дальше — вместе</span></li>
     </ol></div>
     <p class="journey-footnote"><span aria-hidden="true">↗</span> Сейчас открыт первый вход в продукт — база знаний. Дата запуска полного приложения уточняется.</p>
-  </section>
-</main>
-<footer class="wrap site-footer"><a href="index.html">твой ментор ↗</a><span>Навыки, которые можешь показать.</span><a href="#main">Наверх ↑</a></footer></div>
+  </section><section class="public-final" aria-labelledby="final-title"><p class="eyebrow">Следующий шаг</p><h2 id="final-title">Начни с одной темы.<br><span>Дальше — по маршруту.</span></h2><div class="public-actions"><a class="button" href="knowledge/">Выбрать первый материал <span aria-hidden="true">↗</span></a><button class="pilot-stub" type="button" disabled>Хочу в пилот · скоро</button></div><p class="public-caption">Запись в пилот пока не открыта. Дата уточняется.</p></section></div></main>
+<footer class="wrap site-footer"><a href="index.html">твой ментор ↗</a><span>Навыки, которые можешь показать.</span><a href="privacy.html">Cookie и конфиденциальность</a><button type="button" class="cookie-settings" data-cookie-settings>Настройки cookie</button><a href="#main">Наверх ↑</a></footer></div>
 </body></html>

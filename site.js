@@ -7,8 +7,10 @@
     if (modes.includes(stored)) mode = stored;
   } catch { /* The site works without storage. */ }
   const apply = () => {
-    if (mode === 'system') document.documentElement.removeAttribute('data-theme');
+    if (mode === 'system') document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     else document.documentElement.dataset.theme = mode;
+    const dark = mode === 'dark' || (mode === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+    document.querySelectorAll('[data-brand-logo]').forEach(image => { image.src = dark ? image.dataset.darkSrc : image.dataset.lightSrc; });
     const toggle = document.querySelector('[data-theme-toggle]');
     if (toggle) {
       toggle.hidden = false;
@@ -17,6 +19,7 @@
     }
   };
   apply();
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', apply);
   const syncNavigation = () => {
     const links = [...document.querySelectorAll('.site-nav a')];
     const pagePath = location.pathname.replace(/index\.html$/, '');
@@ -41,4 +44,3 @@
     });
   });
 })();
-
